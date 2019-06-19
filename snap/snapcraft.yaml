@@ -13,8 +13,8 @@ parts:
     # See 'snapcraft plugins'
     plugin: nil
     source: .
-    #build-environment:
-    #  - PATH: "/root/.local/bin:$PATH"
+    build-environment:
+      - PATH: "/root/.local/bin:$PATH"
     override-build: |
       curl -sSL https://get.haskellstack.org/ | sh 
       which stack
